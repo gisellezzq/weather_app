@@ -10,8 +10,9 @@ const forecast = (lat, long, callback) => {
             callback('no location', undefined)
 
         } else {
+            
             callback(undefined, 
-                body.current.weather_descriptions[0] + ' it is ' + body.current.temperature + ', it feels like ' + body.current.feelslike
+                body.current.weather_descriptions[0] + ' it is ' + body.current.temperature + ', it feels like ' + body.current.feelslike + " the humidity is " + body.current.humidity + "%"
 
             )
 
